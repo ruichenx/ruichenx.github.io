@@ -1,0 +1,231 @@
+1:"$Sreact.fragment"
+3:I[3719,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","933","static/chunks/933-b21370172f728743.js","177","static/chunks/app/layout-02b774780b918a92.js"],"ThemeProvider"]
+4:I[310,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","933","static/chunks/933-b21370172f728743.js","177","static/chunks/app/layout-02b774780b918a92.js"],"LocaleProvider"]
+5:I[4574,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","933","static/chunks/933-b21370172f728743.js","177","static/chunks/app/layout-02b774780b918a92.js"],"default"]
+6:I[7555,[],""]
+7:I[1295,[],""]
+8:I[2548,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","933","static/chunks/933-b21370172f728743.js","177","static/chunks/app/layout-02b774780b918a92.js"],"default"]
+a:I[9665,[],"MetadataBoundary"]
+c:I[9665,[],"OutletBoundary"]
+f:I[4911,[],"AsyncMetadataOutlet"]
+11:I[9665,[],"ViewportBoundary"]
+13:I[6614,[],""]
+:HL["/_next/static/css/a2236ed3a697cd6c.css","style"]
+:HL["/_next/static/css/862f91b59e97334f.css","style"]
+2:T5d8,
+    try {
+      const cfg = {"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"fixed","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}};
+      const storageKey = 'locale-storage';
+      const normalize = (value) => typeof value === 'string' ? value.trim().replace('_', '-').toLowerCase() : '';
+      const matchLocale = (candidate) => {
+        const normalized = normalize(candidate);
+        if (!normalized) return null;
+        if (cfg.locales.includes(normalized)) return normalized;
+        const language = normalized.split('-')[0];
+        if (cfg.locales.includes(language)) return language;
+        return null;
+      };
+
+      let resolved = null;
+
+      if (!cfg.enabled) {
+        resolved = cfg.defaultLocale;
+      } else if (cfg.persist) {
+        resolved = matchLocale(localStorage.getItem(storageKey));
+      }
+
+      if (!resolved) {
+        if (cfg.mode === 'fixed') {
+          resolved = cfg.fixedLocale;
+        } else {
+          resolved = matchLocale(navigator.language);
+        }
+      }
+
+      if (!resolved) {
+        resolved = cfg.defaultLocale;
+      }
+
+      const root = document.documentElement;
+      root.lang = resolved;
+      root.setAttribute('data-locale', resolved);
+
+      if (cfg.persist) {
+        localStorage.setItem(storageKey, resolved);
+      }
+    } catch (e) {
+      const root = document.documentElement;
+      root.lang = 'en';
+      root.setAttribute('data-locale', 'en');
+    }
+  0:{"P":null,"b":"4N3fDHKJ9jaRTsfn7Vu5U","p":"","c":["","writings",""],"i":false,"f":[[["",{"children":[["slug","writings","d"],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a2236ed3a697cd6c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/862f91b59e97334f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","link",null,{"rel":"dns-prefetch","href":"https://jialeliu.com"}],["$","link",null,{"rel":"preconnect","href":"https://jialeliu.com","crossOrigin":""}],["$","link",null,{"rel":"preload","as":"font","type":"font/woff2","href":"https://jialeliu.com/fonts/georgiab.woff2","crossOrigin":""}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              try {\n                const theme = localStorage.getItem('theme-storage');\n                const parsed = theme ? JSON.parse(theme) : null;\n                const setting = parsed?.state?.theme || 'system';\n                const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;\n                const effective = setting === 'dark' ? 'dark' : (setting === 'light' ? 'light' : (prefersDark ? 'dark' : 'light'));\n                var root = document.documentElement;\n                root.classList.add(effective);\n                root.setAttribute('data-theme', effective);\n              } catch (e) {\n                var root = document.documentElement;\n                root.classList.add('light');\n                root.setAttribute('data-theme', 'light');\n              }\n            "}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],["$","body",null,{"className":"font-sans antialiased","children":["$","$L3",null,{"children":["$","$L4",null,{"config":{"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"fixed","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}},"children":[["$","$L5",null,{"items":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Articles","type":"page","target":"articles","href":"/articles"},{"title":"Other Writings","type":"page","target":"writings","href":"/writings"}],"siteTitle":"Ruichen XU","enableOnePageMode":false,"i18n":"$0:f:0:1:1:props:children:1:props:children:1:props:children:props:children:props:config","itemsByLocale":{"zh":[{"title":"首页","type":"page","target":"about","href":"/"},{"title":"文章","type":"page","target":"articles","href":"/articles"},{"title":"杂文","type":"page","target":"writings","href":"/writings"}],"en":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Articles","type":"page","target":"articles","href":"/articles"},{"title":"Other Writings","type":"page","target":"writings","href":"/writings"}]},"siteTitleByLocale":{"zh":"徐睿晨","en":"Ruichen XU"}}],["$","main",null,{"className":"min-h-screen pt-16 lg:pt-20","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L8",null,{"lastUpdated":"Aug 3, 2026","lastUpdatedByLocale":{"zh":"2026年5月28日","en":"Aug 3, 2026"},"defaultLocale":"en"}]]}]}]}]]}]]}],{"children":[["slug","writings","d"],["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L9",["$","$La",null,{"children":"$Lb"}],null,["$","$Lc",null,{"children":["$Ld","$Le",["$","$Lf",null,{"promise":"$@10"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","cDAljhsfreqq2NILu-W6f",{"children":[["$","$L11",null,{"children":"$L12"}],null]}],null]}],false]],"m":"$undefined","G":["$13","$undefined"],"s":false,"S":true}
+14:"$Sreact.suspense"
+15:I[4911,[],"AsyncMetadata"]
+17:I[2382,["803","static/chunks/628fdacb-448eb9389e4a3378.js","461","static/chunks/461-a9a5d7b05a71d978.js","965","static/chunks/965-38d91ae3956b83cd.js","748","static/chunks/748-87cad8b660119346.js","182","static/chunks/app/%5Bslug%5D/page-2d3bf3d8156de846.js"],"default"]
+b:["$","$14",null,{"fallback":null,"children":["$","$L15",null,{"promise":"$@16"}]}]
+18:T1877,这些内容包括我在部分课程与报告中整理的笔记，以及一些说明性文章，仅供参考使用，其中可能存在不准确或不完整之处。
+
+## 会议报告
+
+- **The Gan-Gross-Prasad period of Klingen Eisenstein families over unitary groups**.
+
+  - At the conference *33èmes Journées Arithmétiques*. Luxembourg. July 1, 2025. [Conference link](https://www.uni.lu/fstm-en/conferences/ja25/) and [Slides](https://drive.google.com/file/d/1Qh-z9XGIo1ghWh2EPh8kZ57gEvRlLXQG/view?usp=drive_link) (Quite outdated, not suggested for serious reading).
+
+- **The method of Eisenstein congruences in Iwasawa theory**. 
+
+  - At the conference *Géométrie algébrique et théorie des nombres en Bourgogne Franche-Comté*. Dijon, France. March 28, 2025. [Conference link](https://indico.math.cnrs.fr/event/13817/overview) and [Slides](https://drive.google.com/file/d/1JuckexI1qi1vd93fIFd2adb2GnkL7Pet/view?usp=drive_link) (Quite outdated, not suggested for serious reading).
+
+  
+
+## 讨论班笔记
+
+- **Universal Iwasawa theory**
+  
+  These are written notes when I am learning universal Iwasawa theory, i.e. the recent work of Fouquet-Wan titled "[*The Iwasawa Main Conjecture for universal families of modular motives*"](https://arxiv.org/abs/2107.13726).
+  
+  - [Section 1](https://drive.google.com/file/d/1LQ3SroakJ2PeDmWdY_sWDObx288TJ0bJ/view?usp=drive_link). Overview. (Sept 2024)
+  
+  - [Section 2](https://drive.google.com/file/d/11PkyBKzo1-wU2v0Uc_PB5qxzrDuriVlw/view?usp=drive_link). Main conjectures in the language of fundamental lines. (Sept 2024)
+  
+  - [Section 3](https://drive.google.com/file/d/1qo5b7FkdBY4tjL9du68pqkgEkIf406_n/view?usp=drive_link). Control theorems. (Oct 2024)
+  
+  - [Section 4](https://drive.google.com/file/d/1k457cZgwdV9o5noDUYPNgvyAL-nzhmFE/view?usp=drive_link). Beilinson-Kato zeta elements and their p-adic interpolation. (Oct 2024)
+
+- **Solutions to exercises in R.Greenberg's Park City Note**
+  
+  These are solutions to selected exercises from Greenberg's note ["*Introduction to Iwasawa Theory for Elliptic Curves*"](http://www.ams.org/pcms/009).  They were prepared during a seminar with Haidong Li, Haijun Jia, and Luochen Zhao, who made substantial contributions to these solutions.
+  
+  [Chapter 1](https://drive.google.com/file/d/1k457cZgwdV9o5noDUYPNgvyAL-nzhmFE/view?usp=drive_link), [Chapter 2](https://drive.google.com/file/d/1bvnUv7BlDyfRw1y9tpkqdQKTJ5Ut-7EW/view?usp=drive_link), [Chapter 3](https://drive.google.com/file/d/1tSbmkAg7bwZqjxv-egRQQ76ibl1TYBMP/view?usp=drive_link), [Chapter 4](https://drive.google.com/file/d/1KRmu3o_-mKEez8IXqcajI_IvGWh5vM2t/view?usp=drive_link). (Updated: Dec 2023)
+
+- **Automorphic methods in Iwasawa theory**
+  
+  These are written notes when I am learning the machinery of Eisenstein congruences over unitary groups. I introduced these contents in several seminars.
+  
+  - [Section 1](https://drive.google.com/file/d/153Ov8qlGv89bq3B6kgqc1e6pk3UeBlmG/view?usp=drive_link). Motivations, setups, on unitary groups, etc. (Feb 2025)
+  - [Section 1+](https://drive.google.com/file/d/16fTjvnXXpyDVJf5fF9WEsYYVJ3ATwPDK/view?usp=drive_link). More on unitary Shimura varieties. (May 2023)
+  - [Section 2](https://drive.google.com/file/d/1EpzHHORMjPcMemG5kK5QanfSoAcEhhJX/view?usp=drive_link). Klingen Eisenstein series. (Mar 2025)
+  - [Section 3](https://drive.google.com/file/d/1zJL0xYiRiG3RqriQrvamFH6TvZmxxc7i/view?usp=drive_link). Klingen Eisenstein series and Siegel Eisenstein series. (May 2023)
+  - [Section 4](https://drive.google.com/file/d/1pdCaXwGABK9crev0H4vqDf-GldybwOyp/view?usp=drive_link). Local computations: archimedean places. (May 2023)
+  - [Section 5](https://drive.google.com/file/d/1yKB2O3irIvrGbYO9cn3KyBdbqZN-CNlo/view?usp=drive_link). Local computations: unramified places. (May 2023)
+  - [Section 6](https://drive.google.com/file/d/1Z7uStkeBCe3flbq8EvRc7srDx9Sx252W/view?usp=drive_link). Local computations: ramified places. (May 2023)
+  - [Section 7](https://drive.google.com/file/d/15gXoKMRJtglnFAbLbvXSHCr14JOGQ-DO/view?usp=drive_link). Local computations: p-adic places. (May 2023)
+  - [Section 8](https://drive.google.com/file/d/1RqXnVDCGGXuMdvo-MQJ_7H9pXfvTcN0R/view?usp=drive_link). Global computations (interpolations). (May 2023)
+  
+  We shall expand these notes to include more Galois-theoretic stuffs and TeXify them as a part of my thesis. For example:
+  
+  - [Section 9](https://drive.google.com/file/d/1DrvL9GNmJAewgBIVnxWEJVkQ9UUiHJIG/view?usp=drive_link). Axiomatic Lattice construction. (Nov 2023)
+  
+- **Geometric modular forms**
+  
+  These are written notes for a study seminar on the geometric theory of modular forms and Hida theory.
+  
+  - [Section 1](https://drive.google.com/file/d/1_rcV54jWwpotUkfRDF73ueQ2vnh2xV7g/view?usp=drive_link). Algebro-geometric introduction to modular forms. (Mar 2023)
+  
+  - [Section 2](https://drive.google.com/file/d/1jdD0TwEfc7t2Af7mzfyYCCjEjQ9LFW2t/view?usp=drive_link). Hida theory over $\mathrm{GL}_2$. (Mar 2023)
+  
+  - [Section 3](https://drive.google.com/file/d/1XXnIhd_L1rMjDPWPSFPcxtJHAId3TohO/view?usp=drive_link). p-adic modular forms, more on Hida theory. (Mar 2023)
+
+- **Automorphic forms and automorphic representations**
+  
+  These are written notes when I am learning the basic theory of automorphic forms and automorphic representations, using the book "GTM300" of Getz-Hahn. (To be uploaded)
+
+## 介绍性文章
+
+- [Euler systems](https://drive.google.com/file/d/1O1uhCjtS2j8WRMA6rd45xRXLLK7CmMmH/view?usp=drive_link)  
+  Coursework for the course *"Iwasawa Theory"* delivered by Professor Xin Wan at UCAS.  This is based on Chapters 1 to 3 of Rubin's book "*Euler systems*".
+- [p-adic L-functions for Dirichlet characters](https://drive.google.com/file/d/1lPIu_eZRS2zQ32P4bTNkLGNrGzWXO47z/view?usp=drive_link)  
+  Coursework for the course *"Iwasawa Theory"* delivered by Professor Xin Wan at UCAS.
+
+## 博士生资格考试材料
+
+These are my notes (parts of which are in Chinese), which I prepared for the qualification exam in AMSS, CAS, in the Fall of 2022, along with a list of examples in TeX format.
+
+- [Example-based exercises in algebra](https://drive.google.com/file/d/1l1gw9iW0uLdYUxPzx9H62wWMmqNB8iOH/view?usp=drive_link).
+
+More to be continued.
+19:T187e,Here are my notes on some courses and talks, as well as some expository articles. Most of them are shared via *Google Drive*. Please use them at your own risk.
+
+## Conference Talks
+
+- **The Gan-Gross-Prasad period of Klingen Eisenstein families over unitary groups**.
+
+  - At the conference *33èmes Journées Arithmétiques*. Luxembourg. July 1, 2025. [Conference link](https://www.uni.lu/fstm-en/conferences/ja25/) and [Slides](https://drive.google.com/file/d/1Qh-z9XGIo1ghWh2EPh8kZ57gEvRlLXQG/view?usp=drive_link) (Quite outdated, not suggested for serious reading).
+
+- **The method of Eisenstein congruences in Iwasawa theory**. 
+
+  - At the conference *Géométrie algébrique et théorie des nombres en Bourgogne Franche-Comté*. Dijon, France. March 28, 2025. [Conference link](https://indico.math.cnrs.fr/event/13817/overview) and [Slides](https://drive.google.com/file/d/1JuckexI1qi1vd93fIFd2adb2GnkL7Pet/view?usp=drive_link) (Quite outdated, not suggested for serious reading).
+
+  
+
+## Notes for seminars
+
+- **Universal Iwasawa theory**
+  
+  These are written notes when I am learning universal Iwasawa theory, i.e. the recent work of Fouquet-Wan titled "[*The Iwasawa Main Conjecture for universal families of modular motives*"](https://arxiv.org/abs/2107.13726).
+  
+  - [Section 1](https://drive.google.com/file/d/1LQ3SroakJ2PeDmWdY_sWDObx288TJ0bJ/view?usp=drive_link). Overview. (Sept 2024)
+  
+  - [Section 2](https://drive.google.com/file/d/11PkyBKzo1-wU2v0Uc_PB5qxzrDuriVlw/view?usp=drive_link). Main conjectures in the language of fundamental lines. (Sept 2024)
+  
+  - [Section 3](https://drive.google.com/file/d/1qo5b7FkdBY4tjL9du68pqkgEkIf406_n/view?usp=drive_link). Control theorems. (Oct 2024)
+  
+  - [Section 4](https://drive.google.com/file/d/1k457cZgwdV9o5noDUYPNgvyAL-nzhmFE/view?usp=drive_link). Beilinson-Kato zeta elements and their p-adic interpolation. (Oct 2024)
+
+- **Solutions to exercises in R.Greenberg's Park City Note**
+  
+  These are solutions to selected exercises from Greenberg's note ["*Introduction to Iwasawa Theory for Elliptic Curves*"](http://www.ams.org/pcms/009).  They were prepared during a seminar with Haidong Li, Haijun Jia, and Luochen Zhao, who made substantial contributions to these solutions.
+  
+  [Chapter 1](https://drive.google.com/file/d/1k457cZgwdV9o5noDUYPNgvyAL-nzhmFE/view?usp=drive_link), [Chapter 2](https://drive.google.com/file/d/1bvnUv7BlDyfRw1y9tpkqdQKTJ5Ut-7EW/view?usp=drive_link), [Chapter 3](https://drive.google.com/file/d/1tSbmkAg7bwZqjxv-egRQQ76ibl1TYBMP/view?usp=drive_link), [Chapter 4](https://drive.google.com/file/d/1KRmu3o_-mKEez8IXqcajI_IvGWh5vM2t/view?usp=drive_link). (Updated: Dec 2023)
+
+- **Automorphic methods in Iwasawa theory**
+  
+  These are written notes when I am learning the machinery of Eisenstein congruences over unitary groups. I introduced these contents in several seminars.
+  
+  - [Section 1](https://drive.google.com/file/d/153Ov8qlGv89bq3B6kgqc1e6pk3UeBlmG/view?usp=drive_link). Motivations, setups, on unitary groups, etc. (Feb 2025)
+  - [Section 1+](https://drive.google.com/file/d/16fTjvnXXpyDVJf5fF9WEsYYVJ3ATwPDK/view?usp=drive_link). More on unitary Shimura varieties. (May 2023)
+  - [Section 2](https://drive.google.com/file/d/1EpzHHORMjPcMemG5kK5QanfSoAcEhhJX/view?usp=drive_link). Klingen Eisenstein series. (Mar 2025)
+  - [Section 3](https://drive.google.com/file/d/1zJL0xYiRiG3RqriQrvamFH6TvZmxxc7i/view?usp=drive_link). Klingen Eisenstein series and Siegel Eisenstein series. (May 2023)
+  - [Section 4](https://drive.google.com/file/d/1pdCaXwGABK9crev0H4vqDf-GldybwOyp/view?usp=drive_link). Local computations: archimedean places. (May 2023)
+  - [Section 5](https://drive.google.com/file/d/1yKB2O3irIvrGbYO9cn3KyBdbqZN-CNlo/view?usp=drive_link). Local computations: unramified places. (May 2023)
+  - [Section 6](https://drive.google.com/file/d/1Z7uStkeBCe3flbq8EvRc7srDx9Sx252W/view?usp=drive_link). Local computations: ramified places. (May 2023)
+  - [Section 7](https://drive.google.com/file/d/15gXoKMRJtglnFAbLbvXSHCr14JOGQ-DO/view?usp=drive_link). Local computations: p-adic places. (May 2023)
+  - [Section 8](https://drive.google.com/file/d/1RqXnVDCGGXuMdvo-MQJ_7H9pXfvTcN0R/view?usp=drive_link). Global computations (interpolations). (May 2023)
+  
+  We shall expand these notes to include more Galois-theoretic stuffs and TeXify them as a part of my thesis. For example:
+  
+  - [Section 9](https://drive.google.com/file/d/1DrvL9GNmJAewgBIVnxWEJVkQ9UUiHJIG/view?usp=drive_link). Axiomatic Lattice construction. (Nov 2023)
+  
+- **Geometric modular forms**
+  
+  These are written notes for a study seminar on the geometric theory of modular forms and Hida theory.
+  
+  - [Section 1](https://drive.google.com/file/d/1_rcV54jWwpotUkfRDF73ueQ2vnh2xV7g/view?usp=drive_link). Algebro-geometric introduction to modular forms. (Mar 2023)
+  
+  - [Section 2](https://drive.google.com/file/d/1jdD0TwEfc7t2Af7mzfyYCCjEjQ9LFW2t/view?usp=drive_link). Hida theory over $\mathrm{GL}_2$. (Mar 2023)
+  
+  - [Section 3](https://drive.google.com/file/d/1XXnIhd_L1rMjDPWPSFPcxtJHAId3TohO/view?usp=drive_link). p-adic modular forms, more on Hida theory. (Mar 2023)
+
+- **Automorphic forms and automorphic representations**
+  
+  These are written notes when I am learning the basic theory of automorphic forms and automorphic representations, using the book "GTM300" of Getz-Hahn. (To be uploaded)
+
+## Expository articles
+
+- [Euler systems](https://drive.google.com/file/d/1O1uhCjtS2j8WRMA6rd45xRXLLK7CmMmH/view?usp=drive_link)  
+  Coursework for the course *"Iwasawa Theory"* delivered by Professor Xin Wan at UCAS.  This is based on Chapters 1 to 3 of Rubin's book "*Euler systems*".
+- [p-adic L-functions for Dirichlet characters](https://drive.google.com/file/d/1lPIu_eZRS2zQ32P4bTNkLGNrGzWXO47z/view?usp=drive_link)  
+  Coursework for the course *"Iwasawa Theory"* delivered by Professor Xin Wan at UCAS.
+
+## Notes for qualification exams
+
+These are my notes (parts of which are in Chinese), which I prepared for the qualification exam in AMSS, CAS, in the Fall of 2022, along with a list of examples in TeX format.
+
+- [Example-based exercises in algebra](https://drive.google.com/file/d/1l1gw9iW0uLdYUxPzx9H62wWMmqNB8iOH/view?usp=drive_link).
+
+More to be continued.
+9:["$","$L17",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"杂文","source":"writings.md"},"content":"$18"},"en":{"type":"text","config":{"type":"text","title":"Other Writings","source":"writings.md"},"content":"$19"}},"defaultLocale":"en"}]
+e:null
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+d:null
+16:{"metadata":[["$","title","0",{"children":"Other Writings | Ruichen XU"}],["$","meta","1",{"name":"author","content":"Ruichen XU"}],["$","meta","2",{"name":"keywords","content":"Ruichen XU,PhD,Research,University of Vienna"}],["$","meta","3",{"name":"creator","content":"Ruichen XU"}],["$","meta","4",{"name":"publisher","content":"Ruichen XU"}],["$","meta","5",{"property":"og:title","content":"Ruichen XU"}],["$","meta","6",{"property":"og:description","content":"Postdoctoral Researcher in the University of Vienna"}],["$","meta","7",{"property":"og:site_name","content":"Ruichen XU's Academic Website"}],["$","meta","8",{"property":"og:locale","content":"en_US"}],["$","meta","9",{"property":"og:type","content":"website"}],["$","meta","10",{"name":"twitter:card","content":"summary"}],["$","meta","11",{"name":"twitter:title","content":"Ruichen XU"}],["$","meta","12",{"name":"twitter:description","content":"Postdoctoral Researcher in the University of Vienna"}],["$","link","13",{"rel":"icon","href":"/favicon.svg"}]],"error":null,"digest":"$undefined"}
+10:{"metadata":"$16:metadata","error":null,"digest":"$undefined"}

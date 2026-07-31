@@ -1,0 +1,147 @@
+1:"$Sreact.fragment"
+3:I[3719,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","933","static/chunks/933-b21370172f728743.js","177","static/chunks/app/layout-02b774780b918a92.js"],"ThemeProvider"]
+4:I[310,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","933","static/chunks/933-b21370172f728743.js","177","static/chunks/app/layout-02b774780b918a92.js"],"LocaleProvider"]
+5:I[4574,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","933","static/chunks/933-b21370172f728743.js","177","static/chunks/app/layout-02b774780b918a92.js"],"default"]
+6:I[7555,[],""]
+7:I[1295,[],""]
+8:I[2548,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","933","static/chunks/933-b21370172f728743.js","177","static/chunks/app/layout-02b774780b918a92.js"],"default"]
+9:I[6613,["803","static/chunks/628fdacb-448eb9389e4a3378.js","461","static/chunks/461-a9a5d7b05a71d978.js","965","static/chunks/965-38d91ae3956b83cd.js","874","static/chunks/874-6cc630662f3664af.js","748","static/chunks/748-87cad8b660119346.js","974","static/chunks/app/page-7632491129eeeedf.js"],"default"]
+c:I[9665,[],"MetadataBoundary"]
+e:I[9665,[],"OutletBoundary"]
+11:I[4911,[],"AsyncMetadataOutlet"]
+13:I[9665,[],"ViewportBoundary"]
+15:I[6614,[],""]
+:HL["/_next/static/css/a2236ed3a697cd6c.css","style"]
+:HL["/_next/static/css/862f91b59e97334f.css","style"]
+2:T5d8,
+    try {
+      const cfg = {"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"fixed","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}};
+      const storageKey = 'locale-storage';
+      const normalize = (value) => typeof value === 'string' ? value.trim().replace('_', '-').toLowerCase() : '';
+      const matchLocale = (candidate) => {
+        const normalized = normalize(candidate);
+        if (!normalized) return null;
+        if (cfg.locales.includes(normalized)) return normalized;
+        const language = normalized.split('-')[0];
+        if (cfg.locales.includes(language)) return language;
+        return null;
+      };
+
+      let resolved = null;
+
+      if (!cfg.enabled) {
+        resolved = cfg.defaultLocale;
+      } else if (cfg.persist) {
+        resolved = matchLocale(localStorage.getItem(storageKey));
+      }
+
+      if (!resolved) {
+        if (cfg.mode === 'fixed') {
+          resolved = cfg.fixedLocale;
+        } else {
+          resolved = matchLocale(navigator.language);
+        }
+      }
+
+      if (!resolved) {
+        resolved = cfg.defaultLocale;
+      }
+
+      const root = document.documentElement;
+      root.lang = resolved;
+      root.setAttribute('data-locale', resolved);
+
+      if (cfg.persist) {
+        localStorage.setItem(storageKey, resolved);
+      }
+    } catch (e) {
+      const root = document.documentElement;
+      root.lang = 'en';
+      root.setAttribute('data-locale', 'en');
+    }
+  a:T864,我是徐睿晨，现为维也纳大学博士后研究员（自2026年9月起开展博士后研究工作）。我受 Harald Grobner 指导，并由 Adel Betina 共同指导。该博士后职位由奥地利科学基金（FWF）的独立研究项目 [*Eigenvarieties and p-adic L-functions*](https://www.fwf.ac.at/en/research-radar/10.55776/PAT2584625)（P 325085-N35）资助。
+
+此前，我于中国科学院数学与系统科学研究院获得基础数学博士学位，师从万昕研究员（2021年9月—2026年6月）。
+
+**联系方式**：xuruichen@amss.ac.cn。
+
+**[简历（英文）](/files/CV_RuichenXU.pdf)**
+
+
+
+## 研究方向
+
+我的研究兴趣主要集中在数论中的 *岩泽理论*，目前关注以下方向：
+
+- 岩泽理论中的自守方法  
+- Euler 系统的构造  
+- 肥田族、Coleman 族及更一般万有族中的岩泽理论  
+- 岩泽理论的算术应用，包括 Birch–Swinnerton-Dyer 猜想及其在 Bloch–加藤猜想框架下的推广等  
+
+
+
+## 论文与预印本
+
+- **《关于某些复乘阿贝尔簇在反分圆塔上的 Mordell–Weil 秩》**（**On the Mordell-Weil rank of certain CM abelian varieties over anticyclotomic towers**）与李海东合作。*《数论杂志》*(*Journal of Number Theory*) 293 (2027) pp. 1-41. [DOI: 10.1016/j.jnt.2026.06.001](https://doi.org/10.1016/j.jnt.2026.06.001)。 开放获取，另见[arXiv:2502.12648](https://arxiv.org/abs/2502.12648)
+  
+- **《酉群上 Klingen Eisenstein 肥田族的 Gan–Gross–Prasad 周期积分》**, 预印本（2024） 
+  [arXiv:2410.13132](https://arxiv.org/abs/2410.13132)
+
+
+
+## 学位论文
+
+- 博士论文：*《酉群的岩泽理论：Eisenstein同余方法及其应用》* 
+- 本科论文：*《费马大定理的证明：Wiles 证明及其后续发展》*
+
+
+
+## 教育经历
+
+- **2023.9 – 2026.6**：中国科学院数学与系统科学研究院，基础数学博士学位，导师：万昕研究员  
+- **2021.9 – 2023.7**：中国科学院数学与系统科学研究院，基础数学硕士在读（已转段），导师：万昕研究员 
+- **2017.9 – 2021.7**：北京航空航天大学，理学学士学位b:T8b2,I am Ruichen Xu, a Postdoctoral Researcher at the University of Vienna, starting from September 2026. I am mentored by Harald Grobner and co-supervised by Adel Betina. My position is supported by the FWF Stand-Alone Grant project [*Eigenvarieties and p-adic L-functions*](https://www.fwf.ac.at/en/research-radar/10.55776/PAT2584625) (P 325085-N35).
+
+Before that, I received my PhD in Pure Mathematics from the Academy of Mathematics and Systems Science, Chinese Academy of Sciences, under the supervision of Xin Wan (September 2021 – June 2026).
+
+**Contact**: xuruichen@amss.ac.cn
+
+**[Curriculum Vitae](/files/CV_RuichenXU.pdf)**.
+
+## Research Interests
+
+I am interested in *Iwasawa theory*, a branch of number theory, and my current research focuses on the following topics:
+
+- Automorphic methods in Iwasawa theory
+- Construction of Euler systems
+- Iwasawa theory in (Hida, Coleman or universal) families
+- Arithmetic applications of Iwasawa theory: Birch and Swinnerton-Dyer conjecture, and its generalization to the Bloch-Kato conjecture, etc.
+
+
+
+## Publications and Pre-publications
+
+- **On the Mordell-Weil rank of certain CM abelian varieties over anticyclotomic towers**. With Haidong LI. *Journal of Number Theory* 293 (2027) pp. 1-41. [DOI: 10.1016/j.jnt.2026.06.001](https://doi.org/10.1016/j.jnt.2026.06.001). Open access article, also available on [arXiv:2502.12648](https://arxiv.org/abs/2502.12648).
+- **The Gan-Gross-Prasad period of Klingen Eisenstein families over unitary groups**, preprint (2024). [arXiv:2410.13132](https://arxiv.org/abs/2410.13132)
+
+
+
+## Thesis
+
+- PhD Thesis: *Iwasawa Theory for Unitary Groups via Eisenstein Congruences and its Applications*
+- Bachelor Thesis: *The Proof of Fermat's Last Theorem: Wiles' Proof and Beyond*
+
+## Education
+
+- **2023.9 – 2026.6**: PhD in Pure Mathematics, Academy of Mathematics and Systems Science, Chinese Academy of Sciences. Supervisor: Professor Xin WAN.  
+- **2021.9 – 2023.7**: Master’s Student in Pure Mathematics, Academy of Mathematics and Systems Science, Chinese Academy of Sciences. Supervisor: Professor Xin WAN.  
+- **2017.9 – 2021.7**: Bachelor of Science, Beihang University. Mentored by Professors Peng GAO and Shijin ZHANG.  
+0:{"P":null,"b":"4N3fDHKJ9jaRTsfn7Vu5U","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a2236ed3a697cd6c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/862f91b59e97334f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","link",null,{"rel":"dns-prefetch","href":"https://jialeliu.com"}],["$","link",null,{"rel":"preconnect","href":"https://jialeliu.com","crossOrigin":""}],["$","link",null,{"rel":"preload","as":"font","type":"font/woff2","href":"https://jialeliu.com/fonts/georgiab.woff2","crossOrigin":""}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              try {\n                const theme = localStorage.getItem('theme-storage');\n                const parsed = theme ? JSON.parse(theme) : null;\n                const setting = parsed?.state?.theme || 'system';\n                const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;\n                const effective = setting === 'dark' ? 'dark' : (setting === 'light' ? 'light' : (prefersDark ? 'dark' : 'light'));\n                var root = document.documentElement;\n                root.classList.add(effective);\n                root.setAttribute('data-theme', effective);\n              } catch (e) {\n                var root = document.documentElement;\n                root.classList.add('light');\n                root.setAttribute('data-theme', 'light');\n              }\n            "}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],["$","body",null,{"className":"font-sans antialiased","children":["$","$L3",null,{"children":["$","$L4",null,{"config":{"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"fixed","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}},"children":[["$","$L5",null,{"items":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Articles","type":"page","target":"articles","href":"/articles"},{"title":"Other Writings","type":"page","target":"writings","href":"/writings"}],"siteTitle":"Ruichen XU","enableOnePageMode":false,"i18n":"$0:f:0:1:1:props:children:1:props:children:1:props:children:props:children:props:config","itemsByLocale":{"zh":[{"title":"首页","type":"page","target":"about","href":"/"},{"title":"文章","type":"page","target":"articles","href":"/articles"},{"title":"杂文","type":"page","target":"writings","href":"/writings"}],"en":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Articles","type":"page","target":"articles","href":"/articles"},{"title":"Other Writings","type":"page","target":"writings","href":"/writings"}]},"siteTitleByLocale":{"zh":"徐睿晨","en":"Ruichen XU"}}],["$","main",null,{"className":"min-h-screen pt-16 lg:pt-20","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L8",null,{"lastUpdated":"Aug 3, 2026","lastUpdatedByLocale":{"zh":"2026年5月28日","en":"Aug 3, 2026"},"defaultLocale":"en"}]]}]}]}]]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L9",null,{"dataByLocale":{"zh":{"author":{"name":"徐睿晨","title":"博士后研究员（基础数学）","institution":"维也纳大学","avatar":"/bio.jpg"},"social":{"email":"xuruichen@amss.ac.cn","orcid":"https://orcid.org/0009-0003-4555-2116"},"features":{"enable_likes":false,"enable_one_page_mode":false},"enableOnePageMode":false,"researchInterests":["代数数论","岩泽理论","自守理论"],"pagesToShow":[{"type":"about","id":"about","sections":[{"id":"about","type":"markdown","source":"about.md","title":"徐睿晨的主页","content":"$a"}]}]},"en":{"author":{"name":"Ruichen XU","title":"Postdoctoral Researcher in Pure Mathematics","institution":"University of Vienna","avatar":"/bio.jpg"},"social":{"email":"xuruichen@amss.ac.cn","orcid":"https://orcid.org/0009-0003-4555-2116"},"features":{"enable_likes":false,"enable_one_page_mode":false},"enableOnePageMode":false,"researchInterests":["Algebraic Number Theory","Iwasawa theory","Automorphic Representations"],"pagesToShow":[{"type":"about","id":"about","sections":[{"id":"about","type":"markdown","source":"about.md","title":"About","content":"$b"}]}]}},"defaultLocale":"en"}],["$","$Lc",null,{"children":"$Ld"}],null,["$","$Le",null,{"children":["$Lf","$L10",["$","$L11",null,{"promise":"$@12"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","EfL4R62gVIsEqbHS9CAVy",{"children":[["$","$L13",null,{"children":"$L14"}],null]}],null]}],false]],"m":"$undefined","G":["$15","$undefined"],"s":false,"S":true}
+16:"$Sreact.suspense"
+17:I[4911,[],"AsyncMetadata"]
+d:["$","$16",null,{"fallback":null,"children":["$","$L17",null,{"promise":"$@18"}]}]
+10:null
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+18:{"metadata":[["$","title","0",{"children":"Ruichen XU"}],["$","meta","1",{"name":"description","content":"Postdoctoral Researcher in the University of Vienna"}],["$","meta","2",{"name":"author","content":"Ruichen XU"}],["$","meta","3",{"name":"keywords","content":"Ruichen XU,PhD,Research,University of Vienna"}],["$","meta","4",{"name":"creator","content":"Ruichen XU"}],["$","meta","5",{"name":"publisher","content":"Ruichen XU"}],["$","meta","6",{"property":"og:title","content":"Ruichen XU"}],["$","meta","7",{"property":"og:description","content":"Postdoctoral Researcher in the University of Vienna"}],["$","meta","8",{"property":"og:site_name","content":"Ruichen XU's Academic Website"}],["$","meta","9",{"property":"og:locale","content":"en_US"}],["$","meta","10",{"property":"og:type","content":"website"}],["$","meta","11",{"name":"twitter:card","content":"summary"}],["$","meta","12",{"name":"twitter:title","content":"Ruichen XU"}],["$","meta","13",{"name":"twitter:description","content":"Postdoctoral Researcher in the University of Vienna"}],["$","link","14",{"rel":"icon","href":"/favicon.svg"}]],"error":null,"digest":"$undefined"}
+12:{"metadata":"$18:metadata","error":null,"digest":"$undefined"}
